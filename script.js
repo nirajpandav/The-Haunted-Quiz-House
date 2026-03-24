@@ -6,7 +6,7 @@ const scream = document.getElementById("scream");
 const chaseMusic = document.getElementById("chaseMusic");
 
 window.onload = () => {
-  bgCreepy.volume = 0.25;
+  bgCreepy.volume = 0.10;
   bgCreepy.play().catch(() => {
     console.log("Autoplay blocked, starts after click.");
   });
@@ -33,7 +33,7 @@ function startGame() {
 
   if (triviaMusic) {
     triviaMusic.currentTime = 0;
-    triviaMusic.volume = 0.25;
+    triviaMusic.volume = 0.10;
     triviaMusic.play().catch(() => {});
   }
 
@@ -177,7 +177,7 @@ function goToChaseScreen() {
 
   if (chaseMusic) {
     chaseMusic.currentTime = 0;
-    chaseMusic.volume = 0.25;
+    chaseMusic.volume = 0.10;
     chaseMusic.play();
   }
 
